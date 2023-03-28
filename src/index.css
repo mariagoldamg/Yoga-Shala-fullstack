@@ -1,0 +1,482 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+nav {
+  background: #EAC7C7;
+  display: flex;
+  justify-content: center;
+  padding:15px;
+}
+
+.link,.linkMobile {
+  padding:10px 40px;
+  text-decoration: none;
+  color: #815B5B;
+  text-transform: uppercase;
+  font-family: 'Noto Sans Syloti Nagri', sans-serif;
+}
+.link,.linkMobile:hover {
+  font-weight: bold;
+}
+
+.yogaIcon {
+  width:100px;
+  margin-top:0%;
+  margin-right:30px
+}
+
+.App {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+body {
+  background-color: #FFDDD2;
+}
+.block {
+  margin-top:30px;
+  background-color: rgba(219, 202, 202, 0.5);
+  padding: 20px;
+  width:300px;
+}
+.blockAbout {
+  margin-top:30px;
+  display: flex;
+  justify-content: center;
+  margin-right:250px;
+  margin-left: 250px;
+}
+.color{
+  background-color: rgba(219, 202, 202, 0.5);
+  width: 100%;
+  padding: 20px;
+  margin-top:30px;
+}
+
+img {
+  width:300px;
+  margin-top:30px
+
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:300px;
+} 
+
+h1,h2,h4,h5,p,button,label {
+  font-family: 'Noto Sans Syloti Nagri', sans-serif;
+  color: #815B5B;
+}
+label{
+  font-weight: bold;
+}
+h3 {
+  background-color: #DEBACE;
+margin-bottom:70px;
+font-size: large;
+}
+h4{
+  background-color: #DEBACE;
+  width:300px;
+  text-align: center;
+}
+p {
+  margin-top:2px
+}
+.quantity {
+  margin:5px;
+  background-color: #FFDDD2;
+  border:1px solid #815B5B;
+}
+.quantity:hover {
+  border:2px solid #815B5B;
+  cursor:pointer;
+  
+}
+.addToCart {
+  background-color: #DEBACE;
+  border:1px solid #815B5B;
+  box-shadow: #A7727D 3px 2px;
+}
+.addToCart:hover{
+  border:2px solid #815B5B;
+  cursor:pointer
+}
+h2 {
+  margin-bottom:50px;
+}
+.categoryButton{
+  background-color: #EAC7C7;
+  width:300px;
+  text-align: center;
+  cursor:pointer;
+}
+.categoryButton:hover {
+  background-color: #DEBACE;
+}
+
+.categoryButtonSelected {
+  background-color: #DEBACE;
+  width:300px;
+  text-align: center;
+  cursor:pointer;
+}
+
+.bagIcon{
+  width:120px;
+  margin-top:20px;
+}
+.bagIcon:hover{
+  width:130px;
+}
+.bagIconnav{
+  width: 40px;
+  margin-top:-5px;
+  justify-content: end;
+}
+.bagIconPosition{
+  display: flex;
+}
+
+
+.binIcon{
+  width: 20px;
+  margin-top:20px;
+  margin-bottom: 20px
+}
+.bagIcon,.binIcon:hover {
+  cursor:pointer
+}
+.total {
+  background-color: #DEBACE;
+  padding:10px;
+  border-radius: 50px;
+  width:50px;
+ border:2px solid black;
+  margin-left:110px;
+  margin-top:-70px;
+ 
+}
+
+/* Modal*/
+
+.darkBG {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  cursor:pointer;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.modal {
+ 
+  width: 300px;
+  height: 600px;
+  background: #FFDDD2;
+  color: white;
+  z-index: 10;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  overflow-y: scroll;
+ 
+}
+
+.modalHeader {
+  height: 50px;
+  overflow: hidden;
+  
+}
+
+.heading {
+  margin: 0;
+  padding: 10px;
+  color:#815B5B;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+}
+
+.modalContent {
+  padding: 10px;
+  font-size: 14px;
+  color:#815B5B;
+  text-align: center;
+}
+
+.modalActions {
+  position: absolute;
+  bottom: 2px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.actionsContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.closeBtn {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 4px 8px;
+  border: none;
+  font-size: 18px;
+  color: #FFDDD2;
+  background: #A7727D;
+  transition: all 0.25s ease;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+  position: absolute;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  margin-top: -7px;
+  margin-right: -7px;
+}
+
+.closeBtn:hover {
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+  transform: translate(-4px, 4px);
+}
+
+.deleteBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 11px 28px;
+
+  font-size: 0.8rem;
+  border: none;
+  color: #815B5B;
+  background: #DEBACE;
+  transition: all 0.25s ease;
+}
+
+.deleteBtn:hover {
+  box-shadow: 0 10px 20px -10px rgba(139, 93, 96, 0.6);
+  transform: translateY(-5px);
+  background: #DEBACE;
+  border: 2px solid #815B5B
+}
+
+  .swal-button {
+    padding: 7px 19px;
+    border-radius: 0%;
+    background-color: #DEBACE;
+    color:#815B5B;
+    font-size: 12px;
+  }
+  
+  .swal-overlay {
+    background-color: rgba(200, 174, 191, 0.45);
+  }
+  .swal-modal {
+    background-color: #FFDDD2;
+    border-radius: 0%;
+  }
+  .cartPic {
+    width:200px;
+  }
+
+  .schedule{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .yogaBlock {
+    display: flex;
+    flex-direction: column;
+    flex: wrap;
+    width:300px;
+    margin-left:75px;
+    margin-top:10px;
+  }
+
+  .time {
+    font-weight: bold;
+  }
+  .line {
+    font-style: italic;
+    font-size: smaller;
+    }
+  .showMore {
+    border:none;
+    background: #DEBACE;
+    cursor:pointer;
+  }
+
+  .teacherContainer {
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    margin-top:-50px;
+    text-align: center;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icon {
+    width:40px;
+   
+  }
+  .containerSocial{
+    display: flex;
+    justify-content: center;
+    margin-right:30px
+  }
+  .colorInsta{
+    width:50px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: smaller;
+  }
+  .name{
+    margin-top:-10px;
+  }
+  .blockContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .contact {
+    font-size: large;
+  }
+  .email {
+    width:300px;
+    height:30px;
+    margin-top: 40px;
+    margin-left:20px;
+  }
+  .message {
+    width:300px;
+    height:100px;
+    margin-top: 40px;
+    margin-left:20px;
+  }
+  .blockForm {
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+  }
+ul {
+ display: none;
+}
+.hamburgerIcon {
+  display: none;
+  justify-content: space-between;
+}
+.bars{
+  display: none;
+}
+
+.example {
+  font-size: small;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+  margin-bottom: -20px;
+}
+.editIcon {
+  display: flex;
+}
+
+.inputIcon {
+ width:50px;
+  color:#815B5B;
+  margin-top: -10px;
+  
+}
+.inputIcon:hover{
+color:red;
+}
+.myLog {
+  background-color: #DEBACE;
+  padding: 10px;
+  margin-top:10px;
+
+}
+
+  @media all and (max-width: 500px){
+
+.yogaIcon{
+  width:90px;
+  height:90px
+}
+
+.blockAbout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right:10px;
+  margin-left:10px;
+  text-align: center;
+}
+.blockContact{
+  text-align: center;
+}
+.link {
+display:none ;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+ul{
+display:block; 
+align-items:center;
+}
+
+li {
+list-style: none;
+padding:5px
+}
+.hamburgerIcon {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+.bars{
+  display: block;
+  width:40px;
+  margin-top: -30px;
+}
+.bars:hover {
+  width:50px
+}
+  }
