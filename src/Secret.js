@@ -26,7 +26,7 @@ isAuthenticated&& (
 <div>
 <div className='blockAbout'>
 <img alt='logo' className="yogaIcon" src={YogaShalaLogo}/>
-<h1>Your Wellness Trecker</h1></div>
+<h1>Your Wellness Tracker</h1></div>
 <div className='blockAbout'>
 
     <input 
