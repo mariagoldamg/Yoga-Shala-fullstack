@@ -7,10 +7,10 @@ const Login = () => {
   return (
     !isAuthenticated&&(<div>
     <div className="blockAbout">
-<p>We have created a <span className="time"> Pesonal Welness Trecker </span>for you to log all your activities and treck your physical and emotinal progress during practices. You are welcome to log all your activities in our studio and outside of it.</p>
+<p>We have created a <span className="time"> Pesonal Welness Tracker </span>for you to log all your activities and treck your physical and emotinal progress during practices. You are welcome to log all your activities in our studio and outside of it.</p>
     </div>
     <div className="blockAbout">
-<p>To access the trecker plaese log in.</p>
+<p>To access the tracker plaese log in.</p>
     </div>
     <div className="blockAbout">
   <button className="deleteBtn" onClick={() => loginWithRedirect()}>Log In</button>
